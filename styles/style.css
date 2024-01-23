@@ -157,15 +157,9 @@ body, html {
     font-size: 24px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1500px) {
     .gradient-background {
         height: 116vh;
-        background: linear-gradient(to right , #41295a, #2F0743);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; 
-        font-size: 24px;
     }
     
 }
