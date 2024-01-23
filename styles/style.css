@@ -6,12 +6,12 @@ body, html {
 }
 
 .gradient-background {
-    height: 100vh; /* 100% da altura da viewport */
-    background: linear-gradient(to right , #41295a, #2F0743); /* Mudar as cores conforme necessário */
+    height: 100vh;
+    background: linear-gradient(to right , #41295a, #2F0743);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Cor do texto, para contrastar com o gradiente */
+    color: white; 
     font-size: 24px;
 }
 
@@ -22,7 +22,7 @@ body, html {
     font-family:'Courier New', Courier, monospace;
     color: #fff;
     font-size: 15px;
-    
+
 }
 
 .birth-text:after{
@@ -32,19 +32,19 @@ body, html {
  animation: pisca .7s infinite;
 }
 
-/* Animação aplicada para subir o texto principal */
+
 
 .move-up {
-    animation: moveUp 1s forwards; /* Ajuste a duração conforme necessário */
+    animation: moveUp 1s forwards; 
 }
 
 @keyframes moveUp {
     to {
-        transform: translateY(-70px); /* Ajuste a quantidade de movimento vertical conforme necessário */
+        transform: translateY(-70px); 
     }
 }
 
-/* Animação aplicada para aparecer um texto e um botão */
+
 
 .content-wrapper {
     text-align: center;
@@ -52,7 +52,7 @@ body, html {
 
 .additional-content {
     opacity: 0;
-    transform: translateY(30px); /* Inicialmente, a div estará um pouco abaixo */
+    transform: translateY(30px); 
     transition: opacity 1s, transform 1s;
     text-align: center;
 }
@@ -65,14 +65,12 @@ body, html {
 .highlights-text{
     max-width: 480px;
     text-align: center;
-    margin: 60px auto;
+
     font-family:'Courier New', Courier, monospace;
     color: #fff;
     font-size: 17px;
-    
-}
 
-/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+}
 
 @keyframes pisca{
     0%, 100%{
@@ -83,7 +81,7 @@ body, html {
     }
 }
 
-/* Botão de vizualizar momentos */
+
 .btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -91,7 +89,7 @@ body, html {
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
-    position: relative; /* Adicione isso para tornar o position:absolute; relativo a este elemento */
+    position: relative; 
 }
 
 .btn-white {
@@ -109,8 +107,8 @@ body, html {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: transform .4s, opacity .4s; /* Separe as transições */
-    transform-origin: center; /* Adicione isso para garantir que a transformação ocorra no centro */
+    transition: transform .4s, opacity .4s; 
+    transform-origin: center; 
 }
 
 .btn-white::after {
@@ -149,14 +147,25 @@ body, html {
     }
 }
 
-/* Sessão de destaques */
-
 #background-highlights {
-    height: 100vh; /* 100% da altura da viewport */
-    background: linear-gradient(to right , #2F0743, #41295a); /* Mudar as cores conforme necessário */
+    height: 100vh;
+    background: linear-gradient(to right , #2F0743, #41295a);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Cor do texto, para contrastar com o gradiente */
+    color: white;
     font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .gradient-background {
+        height: 116vh;
+        background: linear-gradient(to right , #41295a, #2F0743);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; 
+        font-size: 24px;
+    }
+    
 }
