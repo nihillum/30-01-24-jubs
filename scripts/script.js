@@ -65,6 +65,15 @@ const paper29 = document.querySelector("#p29");
 const paper30 = document.querySelector("#p30");
 const paper31 = document.querySelector("#p31");
 
+
+/*document.querySelectorAll('.image-page .front').forEach((front, index) => {
+    console.log(`Front ${index + 1}:`, front);
+    front.addEventListener('click', goNextPage);
+    console.log(`Event listener added to Front ${index + 1}`);
+});*/
+
+
+
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
@@ -76,8 +85,8 @@ let maxLocation = numOfPapers + 1;
 
 function openBook() {
     book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-180px)";
-    nextBtn.style.transform = "translateX(180px)";
+    //prevBtn.style.transform = "translateX(-180px)";
+    //nextBtn.style.transform = "translateX(180px)";
 }
 
 function closeBook(isAtBeginning) {
