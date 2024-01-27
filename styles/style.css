@@ -161,7 +161,7 @@ body, html {
 
 @media (max-width: 1500px) {
     .gradient-background {
-        height: 116vh;
+        height: 100vh;
     }
     
 }
